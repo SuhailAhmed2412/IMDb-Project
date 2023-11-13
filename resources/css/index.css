@@ -1,0 +1,276 @@
+.main-logo {
+    height: 30px;
+    border-radius: 5px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.pro-button {
+    height: 100%;
+    width: 150px;
+    padding: 1px;
+    background-color: transparent;
+    border: none;
+}
+
+.search {
+    width: 600px;
+    max-width: auto;
+    height: 100%;
+}
+
+.intro {
+    height: auto;
+    /* background-color: #4d3333; */
+    background: rgb(40,26,172);
+    background: radial-gradient(circle, rgba(40,26,172,1) 0%, rgba(77,51,51,1) 100%);
+    padding: 10px;
+}
+
+.cast-crew {
+    display: inline-flex;
+    justify-content: end;
+    color: #fff;
+    width: 100%;
+}
+
+.cast-crew a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+}
+
+.list-item1 {
+    display: inline-block;
+    list-style-type: circle;
+}
+
+.all-topics {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.all-topics:hover {
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+}
+
+.title-rating {
+    height: auto;
+    width: 100%;
+    display: inline-flex;
+    justify-content: first baseline;
+    align-content: center;
+    align-items: center;
+}
+
+.title {
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    width: 50%;
+}
+
+.rating {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Roboto', sans-serif;
+    color: salmon;
+    width: 50%;
+    float: right;
+}
+
+.rating a{
+    font-weight: bold;
+    text-decoration: none;
+    color: salmon;
+}
+
+.movie-title {
+    font-size: xx-large;
+}
+
+.release-runtime {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+
+.release-runtime a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: small;
+    color: salmon;
+}
+
+.imdb-rating {
+    width: 150px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid salmon;
+}
+
+.imdb-rating:hover {
+    background-color: #4d3333;
+    cursor: pointer;
+}
+
+.your-rating {
+    width: 150px;
+    padding-left: 10px;
+    border-left: 1px solid salmon;
+}
+
+.rating-number {
+    color: salmon;
+}
+
+.rating-number a {
+    text-decoration: none;
+    color: salmon;
+}
+
+.all-rating {
+    height: auto;
+    display: inline-flex;
+    width: 100%;
+}
+
+.rate-button {
+    background: transparent;
+    border: none;
+    color: rgb(118, 103, 237);
+    font-size: large;
+    font-weight: bold;
+}
+
+.pic-videos {
+    height: 500px;
+    display: inline-flex;
+    width: 100%;
+}
+
+.poster {
+    height: 100%;
+    width: 100%;
+}
+
+.video {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.more {
+    height: 100%;
+    width: 20%;
+    background-color: #79787b;
+    border-radius: 5px;
+}
+
+.more-videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    border-radius: 5px;
+    background-color: #4d3333;
+}
+
+.more-videos:hover {
+    background-color: #79787b;
+}
+
+.more-videos a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.more-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    border-radius: 5px;
+    background-color: #4d3333;
+}
+
+.more-images a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.more-images:hover {
+    background-color: #79787b;
+}
+
+.genre-div {
+    color: #fff;
+}
+
+.genre {
+    display: inline-flex;
+}
+
+.genre li {
+    width: 100px;
+    margin: 2px;
+    text-align: center;
+    list-style-type: none;
+    border: 1px solid salmon;
+    border-radius: 5px;
+}
+
+.movie-details-stream {
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-details {
+    width: 60%;
+}
+
+.movie-details a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.stars li {
+    display: inline-flex;
+    width: max-content;
+    margin: 5px;
+}
+
+.stars li:first-child {
+    margin:0;
+}
+
+.label {
+    width: 20%;
+}
+
+.label-value {
+    width: 80%;
+}
+
+.stream {
+    width: 40%;
+    height: 100%;
+}

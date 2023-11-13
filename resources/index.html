@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/resources/images/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="/resources/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="/resources/js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Sultan 2016 IMDb</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="main-logo" src="/resources/images/Imdb-Logo-2016.png" alt=""></a>
+        <div class=" " style="display: flex; justify-content: space-evenly;" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Menu</a>
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="nav-item search">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="nav-item" style="border-right: 1px solid white;">
+              <button type="button" class="pro-button"><b>IMDbPro</b></button>
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <button type="button" class="pro-button"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" class="ipc-icon ipc-icon--watchlist ipc-btn__icon ipc-btn__icon--pre" viewBox="0 0 24 24" fill="currentColor" role="presentation"><path d="M17 3c1.05 0 1.918.82 1.994 1.851L19 5v16l-7-3-7 3V5c0-1.05.82-1.918 1.851-1.994L7 3h10zm-4 4h-2v3H8v2h3v3h2v-3h3v-2h-3V7z" fill="currentColor"></path></svg>&nbsp;<b>Watchlist</b></button>
+            </li>
+            &nbsp;&nbsp;&nbsp;
+            <li class="nav-item">
+              <button type="button" class="pro-button"><b>Sign In</b></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="intro">
+      <div class="cast-crew">
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <ul>
+            <li class="list-item1"><a href="#">Cast & crew</a></li> 
+            &nbsp;&nbsp; 
+            <li class="list-item1"><a href="#">User reviews</a></li>
+            &nbsp;&nbsp;
+            <li class="list-item1"><a href="#">Trivia</a></li>
+            &nbsp;&nbsp;
+            <li class="list-item1"><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        &nbsp;|&nbsp;
+        <div>
+          <a href="">IMDbPro</a>
+        </div>
+        &nbsp;|&nbsp;
+        <div>
+          <button class="all-topics">All Topics</button>
+        </div>
+        &nbsp;|&nbsp;
+        <div>
+          <button class="all-topics"><img src="/resources/images/icons8-share-48.png" alt="" style="height: 30px;"></button>
+        </div>
+      </div>
+      <div class="title-rating">
+        <div class="title">
+          <div id="movie-title" class="movie-title"></div>
+            <div id="release-runtime" class="release-runtime">
+                <a href="" id="release"></a>&nbsp;&nbsp;
+                <a href="" id="">Not Rated</a>&nbsp;&nbsp;
+                <a href="" id="runtime"></a>
+            </div>
+          </div>
+          <div class="rating">
+            <div id="imdb-rating" class="imdb-rating">
+              <div style="color: salmon;"><b>IMDb Rating</b></div>
+              <div class="all-rating">
+                <div class="star-image">
+                  <i class="fa-regular fa-star" style="color: #fa8072;"></i>
+                </div>
+                <a href="" id="rating-number" class="rating-number"></a><b>/10</b>  
+                <a href="" id="views" class="views"></a>  
+              </div>
+            </div>
+            <div id="your-rating" class="your-rating">
+              <div style="color: salmon;"><b>Your Rating</b></div>
+              <button class="rate-button">
+                <i class="fa-regular fa-star" style="color: rgb(118, 103, 237);"></i>Rate
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pic-videos">
+          <div style="width: 30%;">
+            <img class="poster" id="poster" src="" alt="">
+          </div>
+          <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
+            <video class="video" id="video" controls autoplay>
+              <source src="/resources/videos/Sultan _ Official Teaser _ Salman Khan _ Anushka Sharma _ Ali Abbas Zafar.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="more" id="more">
+            <div class="more-videos">
+              <a href="https://www.imdb.com/title/tt4832640/videogallery/?ref_=tt_ov_vi_sm" target="_blank"><i class="fa-solid fa-play" style="color: #ffffff;"></i>&nbsp;2 Videos</a>
+            </div>
+            <div class="more-images">
+              <a href="https://www.imdb.com/title/tt4832640/mediaviewer/rm3503102977?ref_=tt_ov_mi_sm" target="_blank"><i class="fa-regular fa-image" style="color: #ffffff;"></i>&nbsp;35 Images</a>
+            </div>
+          </div>
+        </div>
+        <hr> 
+        <div class="genre-div">
+          <ul id="genre" class="genre">
+
+          </ul>
+        </div>
+        <div class="movie-details-stream">
+          <div id="movie-details" class="movie-details">
+            <div id="movie-plot" class="movie-plot"></div>
+            <hr>
+            <div style="display: flex;">
+              <div class="label"><b>Director</b></div>
+              <div class="label-value"><a href="" id="director"></a></div>
+            </div>
+            <hr>
+            <div style="display: flex;">
+              <div class="label"><b>Writer</b></div>
+              <div class="label-value"><a href="" id="writer"></a></div>
+            </div>
+            <hr>
+            <div style="display: flex;">
+              <div class="label"><b>Stars</b></div>
+              <div class="label-value"><ul id="stars" class="stars"></ul></div>
+            </div>
+            <hr>
+          </div>
+          <div id="stream" class="stream">
+            
+          </div>
+        </div>  
+  </section>
+</body>
+</html>
