@@ -52,3 +52,14 @@ $('#movie-details').ready(function() {
     }
   })
 })
+
+// Updating Wins & Nominations
+$('#videos-and-photos').ready(function() {
+  $.get('https://imdb-api.projects.thetuhin.com/title/tt4832640',function(response,status,xhr) {
+    if(xhr.status == 200) {
+      var images = response.images;
+      $('#wins').html(response.award.wins);
+      $('#nominations').html(response.award.nominations);
+    }
+  })
+})

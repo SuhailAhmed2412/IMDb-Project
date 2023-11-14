@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="/resources/js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <title>Sultan 2016 IMDb</title>
+    <title>Sultan (2016) - IMDb</title>
 </head>
 <body>
   <header>
@@ -50,6 +50,7 @@
     </nav>
   </header>
   <section class="intro">
+    <div style="width: 95%;">
       <div class="cast-crew">
         <div style="display: flex; justify-content: center; align-items: center;">
           <ul>
@@ -108,7 +109,7 @@
             <img class="poster" id="poster" src="" alt="">
           </div>
           <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
-            <video class="video" id="video" controls autoplay>
+            <video class="video" id="video" autoplay>
               <source src="/resources/videos/Sultan _ Official Teaser _ Salman Khan _ Anushka Sharma _ Ali Abbas Zafar.mp4" type="video/mp4">
             </video>
           </div>
@@ -123,9 +124,7 @@
         </div>
         <hr> 
         <div class="genre-div">
-          <ul id="genre" class="genre">
-
-          </ul>
+          <ul id="genre" class="genre"></ul>
         </div>
         <div class="movie-details-stream">
           <div id="movie-details" class="movie-details">
@@ -148,9 +147,51 @@
             <hr>
           </div>
           <div id="stream" class="stream">
-            
+            <a href="https://www.primevideo.com/detail/amzn1.dv.gti.d8ac370d-20df-6e15-72e7-d06e62e9b7e0" target="_blank"><button class="prime-button"><img src="/resources/images/play-button-svgrepo-com.svg" style="height: 25px; width: 25px;" alt="img">&nbsp;<b>Watch on Prime Video</b></button></a>
+            <a href=""><button class="more-watch-options"><img style="width: 25px; height: 25px;" src="/resources/images/icons8-menu.svg" alt="img">&nbsp;<b>More Watch Options</b></button></a>
+            <div>
+              <a href=""><button class="add-to-wishlist"><img style="width: 25px; height: 25px;" src="/resources/images/icons8-plus-32.png" alt="img">&nbsp;<b>Add to Watchlist</b></button></a>
+              <a href=""><button class="dropdown-button"><img style="width: 25px; height: 25px;" src="/resources/images/icons8-drop-down-20.png" alt="img"></button></a>
+            </div>
           </div>
-        </div>  
+        </div>
+    </div>  
+  </section>
+  <hr>
+  <section class="videos-and-photos" id="videos-and-photos">
+    <div style="width: 95%;">
+      <div class="awards">
+        <div style="height: 100%; width: 8%; background-color: green;"></div>
+        <div style="height: 100%; width: 80%; display: flex; align-items: center; margin-left: 5px;">
+          <b>Awards</b>
+            <div id="wins" style="margin-left: 10px;"></div>&nbsp;Wins &&nbsp;<div id="nominations"></div>&nbsp;Nominations
+        </div>
+        <div style="text-align: end; width: 10%;"><b><i class="fa-solid fa-greater-than" style="color: #000000;"></i></b></div>
+      </div>
+      <div class="videos1">
+        <div class="videos1-title">
+          <a href="https://www.imdb.com/title/tt4832640/videogallery/?ref_=tt_vi_sm" target="_blank"><b>Videos&nbsp;></b></a>
+        </div><br>
+        <div class="video-content" style="display: flex;">
+          <div style="width: 50%; height: 100%; margin-right: 5px;">
+            <a href="https://www.imdb.com/video/vi3609835033/?ref_=tt_vi_i_1" target="_blank"><img height="200px" width="375px" src="/resources/images/Trailer-Image.png" alt="Img"></a>
+            <a href="https://www.imdb.com/video/vi3609835033/?ref_=tt_vi_t_1" target="_blank" class="theatrical-link1">Watch Theatrical Trailer</a>
+          </div>
+          <div style="width: 50%; height: 100%;  margin-left: 5px;">
+            <a href="https://www.imdb.com/video/vi1774566425/?ref_=tt_vi_i_2" target="_blank"><img height="200px" width="375px" src="/resources/images/Director-Image.png" alt="Img"></a>
+            <a href="https://www.imdb.com/video/vi1774566425/?ref_=tt_vi_i_2" target="_blank" class="theatrical-link1">Watch Ali Abbas Zafar | The Insider's Watchlist</a>
+          </div>
+        </div>
+      </div>
+      <div class="photos1">
+        <div class="photos1-title">
+          <a href="https://www.imdb.com/title/tt4832640/mediaviewer/rm3503102977/?ref_=tt_mi_sm" target="_blank"><b>Photos&nbsp;></b></a>
+        </div><br>
+        <div class="photos1-content" style="display: flex;">
+          <ul id="images-list"></ul>
+        </div>
+      </div>
+    </div>
   </section>
 </body>
 </html>
